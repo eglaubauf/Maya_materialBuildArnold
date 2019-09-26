@@ -112,12 +112,12 @@ class MaterialBuilder():
         name = tex.split(".")
         k = name[0].rfind("/")
         name = name[0][k+1:]
-    
+
         #Check which types have been selected. Config as you need
         if "base_color" in name.lower() or "basecolor" in name.lower():
             self.createFile(tex, parent, 'baseColor')
             #self.base_color = tex
-        elif "roughness" in name.lower():
+        elif "roughness" in name.lower() or "rough" in name.lower():
             self.createFileSingleChannel(tex, parent, 'specularRoughness')
         elif "normal" in name.lower():
             self.createNormal(tex, parent)
