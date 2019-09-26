@@ -33,6 +33,11 @@ import materialBuildArnold.materialBuildArnold as mb
 reload(mb)
 mb.open()
 ```
+### TODO:
+   -  tx conversion
+   -  checkboxes for user
+   -  better configuration for searched names
+
 
 ### Notes:
 
