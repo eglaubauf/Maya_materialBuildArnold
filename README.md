@@ -1,11 +1,10 @@
-
 ## A MaterialBuilder Script for Autodesks Maya 
 
 ### Features
 
-- Provides a Materialbuilder for a Principled Shader w
-- The Function check is OCIO is enabled and set ColorSpaces accordingly
-- creates a tree based on Filnames and works best with strings provided by Substance
+- Provides a Materialbuilder for a Principled Shader
+- The Function checks if OCIO is enabled and set ColorSpaces accordingly
+- creates a tree based on filenames and works best with strings provided by Substance
   - base_color or basecolor
   - roughness
   - normal
