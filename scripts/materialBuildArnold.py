@@ -89,11 +89,10 @@ class MaterialBuilder():
 
     def createMaterial(self):
 
-        #Create ShadingGroup
-        sg = cmds.createNode('shadingEngine', n=self.username+'_SG')
-        
+      
         #Create StandardSurface
         myShader = cmds.shadingNode('aiStandardSurface', n=self.username, asShader=True)
+        sg = cmds.sets(name=self.username+'_SG', empty=True, renderable=True, noSurfaceShader=True)
         #Connect
         cmds.connectAttr( self.username+'.outColor', self.username+'_SG.surfaceShader' )
 
