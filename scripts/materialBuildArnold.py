@@ -115,17 +115,18 @@ class MaterialBuilder():
 
         #Check which types have been selected. Config as you need
         if "base_color" in name.lower() or "basecolor" in name.lower():
-            self.createFile(tex, parent, 'baseColor')
-            #self.base_color = tex
+            self.createFile(tex, parent, 'baseColor')         
         elif "roughness" in name.lower() or "rough" in name.lower():
             self.createFileSingleChannel(tex, parent, 'specularRoughness')
+        elif "specular" in name.lower() or "spec" in name.lower():
+            self.createFileSingleChannel(tex, parent, 'specular')
         elif "normal" in name.lower():
             self.createNormal(tex, parent)
         elif "metallic" in name.lower():
             self.createFileSingleChannel(tex, parent, 'metalness')
         elif "reflect" in name.lower():
             self.createFileSingleChannel(tex, parent, 'specular')
-        elif "height" or "displace" in name.lower():
+        elif "height" in name.lower() or "displace" in name.lower() or "displacement" in name.lower():
             self.createDisplacement(tex, sg)    
         elif "bump" in name.lower():
             self.createBump(tex, parent)  
