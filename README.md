@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 ## A MaterialBuilder Script for Autodesks Maya
 
 # NOTE
@@ -44,9 +42,3 @@ mb.open()
 
 All of the scripts are free of charge for free use, commercial or non commercial whatsoever.
 But this scripts may brake your workflow.
-
-### Contact/Issues/Features/Questions
-
-Please check out my other Repos as well, they might be handy to you. For any questions and/or improvement suggestions just contact me via twitter or mail.<br>
-Twitter: @eglaubauf <br>
-Web: www.elmar-glaubauf.at
